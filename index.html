@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>מידעון לתת פנים לנופלים</title>
+<meta name="description" content="המידעון החודשי של עמותת לתת פנים לנופלים">
+<link rel="icon" href="logo.png">
+<style>
+:root{
+  --blue:#2a86c8; --navy:#2e3080; --bg:#f3f6fb; --card:#ffffff; --text:#1d2433; --muted:#5b6578; --line:#dde4f0;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#10131c; --card:#181d2a; --text:#e8ecf5; --muted:#9aa5bb; --line:#2a3246; --navy:#8fa0ff; }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Segoe UI",Arial,"Noto Sans Hebrew",sans-serif;line-height:1.7;font-size:17px}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px 48px}
+header{background:linear-gradient(135deg,#2e3080,#2a86c8);color:#fff;text-align:center;padding:28px 16px 24px}
+header .logo{background:#fff;border-radius:50%;width:130px;height:130px;margin:0 auto 12px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+header .logo img{width:100px;height:auto}
+header h1{margin:0;font-size:2rem}
+header p{margin:4px 0 0;opacity:.9}
+.issue{display:inline-block;margin-top:12px;background:rgba(255,255,255,.18);border-radius:999px;padding:3px 16px;font-size:.95rem}
+.toolbar{display:flex;gap:8px;justify-content:space-between;align-items:center;margin:20px 0 8px;flex-wrap:wrap}
+.toolbar span{color:var(--muted);font-size:.95rem}
+button{font:inherit;background:var(--card);color:var(--navy);border:1px solid var(--line);border-radius:8px;padding:6px 14px;cursor:pointer}
+button:hover{border-color:var(--blue)}
+section{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:18px 0;overflow:hidden}
+section>h2{margin:0;padding:12px 18px;font-size:1.25rem;color:#fff;background:var(--navy);display:flex;gap:10px;align-items:center}
+section.s2>h2{background:#2a86c8} section.s3>h2{background:#c0562b} section.s4>h2{background:#2e7d6b}
+details{border-top:1px solid var(--line)}
+details:first-of-type{border-top:0}
+summary{cursor:pointer;padding:12px 18px;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"＋";color:var(--blue);font-size:1.2rem;flex:none}
+details[open]>summary::after{content:"－"}
+summary:hover{background:rgba(42,134,200,.08)}
+.body{padding:0 18px 16px;color:var(--text)}
+.body p{margin:.3em 0}
+.tag{font-size:.8rem;background:rgba(42,134,200,.15);color:var(--navy);padding:1px 10px;border-radius:999px;margin-inline-start:8px;font-weight:400}
+.cta{display:inline-block;margin-top:6px;background:var(--blue);color:#fff;text-decoration:none;border-radius:8px;padding:6px 16px}
+footer{text-align:center;color:var(--muted);font-size:.9rem;margin-top:30px}
+@media(max-width:520px){body{font-size:16px}header h1{font-size:1.6rem}}
+@media print{details{display:block}details>.body{display:block}summary::after{display:none}button,.toolbar{display:none}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo"><img src="logo.png" alt="לוגו לתת פנים לנופלים"></div>
+  <h1>מידעון לתת פנים לנופלים</h1>
+  <p>עדכונים, סיפורי הצלחה וקריאות לעזרה מהעמותה</p>
+  <div class="issue">גיליון נובמבר 2026</div>
+</header>
+
+<main class="wrap">
+  <div class="toolbar">
+    <span>לחצו על כותרת כדי להרחיב או לצמצם</span>
+    <span><button id="openAll">פתח הכול</button> <button id="closeAll">סגור הכול</button></span>
+  </div>
+
+  <section class="s1" id="ceo">
+    <h2>🖋️ דבר המנכ"לית</h2>
+    <details open>
+      <summary>שלום לחברות ולחברים</summary>
+      <div class="body"><p>כאן יופיע פתח הדברים החודשי של המנכ"לית. (טקסט לדוגמה – להחליף בתוכן אמיתי.)</p></div>
+    </details>
+    <details>
+      <summary>מה עשינו החודש</summary>
+      <div class="body"><p>סיכום קצר של הפעילות המרכזית בחודש האחרון.</p></div>
+    </details>
+    <details>
+      <summary>מבט קדימה</summary>
+      <div class="body"><p>יעדים ומטרות לחודש הבא.</p></div>
+    </details>
+  </section>
+
+  <section class="s2" id="wins">
+    <h2>🌟 שיתוף בהצלחות</h2>
+    <details>
+      <summary>הצלחה ראשונה <span class="tag">צוות חקר</span></summary>
+      <div class="body"><p>תיאור קצר של הצלחה, למשל משפחה שאותרה או סיפור שהושלם.</p></div>
+    </details>
+    <details>
+      <summary>הצלחה שנייה <span class="tag">צוות כתיבה</span></summary>
+      <div class="body"><p>עוד סיפור הצלחה מהחודש.</p></div>
+    </details>
+    <details>
+      <summary>הצלחה שלישית <span class="tag">מתנדבים</span></summary>
+      <div class="body"><p>ציון לשבח למתנדב או למתנדבת.</p></div>
+    </details>
+  </section>
+
+  <section class="s3" id="help">
+    <h2>🙋 פנייה לעזרה</h2>
+    <details>
+      <summary>מחפשים מתנדבים לצוות</summary>
+      <div class="body"><p>פירוט התפקיד, הזמן הנדרש ואיך מצטרפים.</p><a class="cta" href="mailto:">צרו קשר</a></div>
+    </details>
+    <details>
+      <summary>מידע שאנחנו מחפשים</summary>
+      <div class="body"><p>שאלות פתוחות במחקר שבהן כל עזרה מתקבלת בברכה.</p></div>
+    </details>
+  </section>
+
+  <section class="s4" id="ai">
+    <h2>🤖 הסתייעות בבינה מלאכותית</h2>
+    <details>
+      <summary>טיפ החודש</summary>
+      <div class="body"><p>טיפ קצר לשימוש בכלי בינה מלאכותית בעבודת המתנדבים.</p></div>
+    </details>
+    <details>
+      <summary>דוגמה מהשטח</summary>
+      <div class="body"><p>איך מתנדב או מתנדבת השתמשו בבינה מלאכותית כדי לקדם משימה.</p></div>
+    </details>
+    <details>
+      <summary>זהירות ושיקול דעת</summary>
+      <div class="body"><p>כללי אצבע: בודקים מקורות, שומרים על פרטיות המשפחות, ולא מסתמכים על תשובה אחת.</p></div>
+    </details>
+  </section>
+
+  <section class="s1" id="events">
+    <h2>📅 אירועים ועדכונים</h2>
+    <details>
+      <summary>מפגש זום הקרוב</summary>
+      <div class="body"><p>תאריך, שעה וקישור יתווספו כאן.</p></div>
+    </details>
+    <details>
+      <summary>הודעות כלליות</summary>
+      <div class="body"><p>הודעות נוספות לחברי העמותה.</p></div>
+    </details>
+  </section>
+
+  <footer>© לתת פנים לנופלים · המידעון יוצא אחת לחודש</footer>
+</main>
+
+<script>
+document.getElementById('openAll').onclick=()=>document.querySelectorAll('details').forEach(d=>d.open=true);
+document.getElementById('closeAll').onclick=()=>document.querySelectorAll('details').forEach(d=>d.open=false);
+</script>
+</body>
+</html>
